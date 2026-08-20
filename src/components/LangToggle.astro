@@ -1,0 +1,79 @@
+---
+---
+
+<button type="button" class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">
+  <span id="lang-toggle-label">ES</span>
+</button>
+
+<script>
+  // Independiente del selector de tema a propósito (ThemeToggle.astro).
+  // Este botón sí aplica el idioma al cargar (no hay forma de evitar el
+  // "flash" de texto en español sin duplicar páginas por idioma).
+  import { translations, STORAGE_LANG } from "../i18n/translations.js";
+
+  type Lang = keyof typeof translations;
+
+  function isLang(value: string | null): value is Lang {
+    return value === "es" || value === "en";
+  }
+
+  function t(lang: Lang, key: string): string | undefined {
+    return (translations[lang] as Record<string, string>)[key];
+  }
+
+  const root = document.documentElement;
+  const btn = document.getElementById("lang-toggle");
+  const label = document.getElementById("lang-toggle-label");
+
+  function getPreferredLang(): Lang {
+    const stored = localStorage.getItem(STORAGE_LANG);
+    if (isLang(stored)) return stored;
+    return navigator.language?.toLowerCase().startsWith("en") ? "en" : "es";
+  }
+
+  function applyLang(lang: Lang) {
+    root.lang = lang;
+    if (label) label.textContent = lang.toUpperCase();
+    btn?.setAttribute("aria-label", lang === "es" ? "Cambiar a inglés" : "Switch to Spanish");
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const value = key && t(lang, key);
+      if (value) el.innerHTML = value;
+    });
+
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-aria-label");
+      const value = key && t(lang, key);
+      if (value) el.setAttribute("aria-label", value);
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-alt");
+      const value = key && t(lang, key);
+      if (value) el.setAttribute("alt", value);
+    });
+
+    const titleEl = document.querySelector("title");
+    const titleValue = t(lang, "meta.title");
+    if (titleEl && titleValue) titleEl.textContent = titleValue;
+
+    const descEl = document.querySelector('meta[name="description"]');
+    const descValue = t(lang, "meta.description");
+    if (descEl && descValue) descEl.setAttribute("content", descValue);
+  }
+
+  btn?.addEventListener("click", () => {
+    const next: Lang = getPreferredLang() === "es" ? "en" : "es";
+    localStorage.setItem(STORAGE_LANG, next);
+
+    // El flip (ver .lang-toggle.is-swapping en global.css) tarda 0.35s
+    // y llega a opacidad 0 a la mitad — cambiamos el texto justo ahí
+    // para que se vea como una vuelta de tarjeta, no un salto brusco.
+    btn.classList.add("is-swapping");
+    window.setTimeout(() => applyLang(next), 150);
+    window.setTimeout(() => btn.classList.remove("is-swapping"), 350);
+  });
+
+  applyLang(getPreferredLang());
+</script>

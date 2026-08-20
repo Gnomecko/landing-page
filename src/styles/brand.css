@@ -1,0 +1,98 @@
+/* ==========================================================================
+   GNOMECKO — ARCHIVO DE MARCA
+   ========================================================================== */
+
+:root {
+  /* --- FUENTES -------------------------------------------------------- */
+  /* Space Grotesk, Roboto Mono o similar: fuentes más modernas y tecnológicas,
+     que encajan mejor con arquitectura de datos y desarrollo de software. */
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+
+  /* Inter: sans-serif limpia y muy legible, mantenida para textos largos. */
+  --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+
+  /* --- PALETA DE COLORES ----------------------------------------------- */
+  /* Fondo principal: azul noche profundo (transmite seriedad, código y elegancia) */
+  --color-bg: #f8fafc;
+  /* Fondo secundario, para secciones alternas o tarjetas */
+  --color-bg-alt: #f1f5f9; 
+  /* Superficie de tarjetas / bloques sobre el fondo */
+  --color-surface: #ffffff;
+
+  /* Texto principal (blanco humo para contraste sin fatigar la vista) */
+  --color-text: #0f172a;
+  /* Texto secundario / descripciones */
+  --color-text-muted: #475569;
+  /* Texto sobre fondos de color */
+  --color-text-on-primary: #ffffff;
+
+  /* Color primario de marca: el verde de Gnomecko (#099268). 
+     Úsalo en botones principales, íconos y textos que quieras resaltar. */
+  --color-primary: #099268;
+  --color-primary-dark: #067250;
+  --color-primary-light: #e6f6f1;
+
+  /* Color de acento: el rojo del gorro de Gnomecko (#E03131). 
+     Úsalo con mucha moderación (ej. notificaciones o un botón muy específico). */
+  --color-accent: #e03131;
+  --color-accent-dark: #b52727;
+  --color-accent-light: #fcebeb;
+
+  /* Bordes y líneas divisorias sutiles */
+  --color-border: #e2e8f0;
+
+  /* Estados */
+  --color-success: #099268;
+  --color-error: #e03131;
+
+  /* --- RADIOS Y SOMBRAS -------------------------------------------------
+     Radios ligeramente más pequeños para un aspecto más estructurado y formal. */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  /* --- ESPACIADO BASE --------------------------------------------------- */
+  --spacing-unit: 1rem;
+  --container-width: 1120px;
+}
+
+/* ==========================================================================
+   MODO OSCURO
+   --------------------------------------------------------------------------
+   Se activa de 2 formas (ver el círculo de preferencias en el header):
+   1. El sistema operativo del visitante está en oscuro y no eligió nada
+      manualmente (bloque @media de abajo).
+   2. Eligió "Oscuro" a propósito (atributo data-theme="dark" en <html>,
+      guardado y aplicado por src/components/PreferencesToggle.astro).
+   Para ajustar los colores del modo oscuro, edita los valores de AMBOS
+   bloques (son iguales a propósito). --color-primary y --color-accent no
+   se repiten porque se mantienen igual en los dos temas. */
+:root[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-bg-alt: #1e293b;
+  --color-surface: #0b1120;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-primary-light: #23473b;
+  --color-accent-light: #472121;
+  --color-border: #334155;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #0f172a;
+    --color-bg-alt: #1e293b;
+    --color-surface: #0b1120;
+    --color-text: #f8fafc;
+    --color-text-muted: #94a3b8;
+    --color-primary-light: #23473b;
+    --color-accent-light: #472121;
+    --color-border: #334155;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
+  }
+}

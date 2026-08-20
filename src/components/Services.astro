@@ -1,0 +1,55 @@
+---
+const services = [
+  {
+    icon: "🖥️",
+    key: "1",
+    title: "Landing pages y sitios web",
+    description:
+      "Páginas rápidas, responsivas y pensadas para convertir visitas en clientes, con una identidad visual propia.",
+  },
+  {
+    icon: "📱",
+    key: "2",
+    title: "Apps personalizadas",
+    description:
+      "Aplicaciones web y móviles a medida, adaptadas a los procesos reales de tu negocio, no al revés.",
+  },
+  {
+    icon: "🎓",
+    key: "3",
+    title: "Apps educativas",
+    description:
+      "Herramientas digitales para enseñar mejor: seguimiento de progreso, contenidos interactivos y accesibles.",
+  },
+  {
+    icon: "🎮",
+    key: "4",
+    title: "Videojuegos educativos",
+    description:
+      "Aprendizaje a través del juego: mecánicas simples, objetivos claros y contenido pedagógico real.",
+  },
+];
+---
+
+<section id="servicios">
+  <div class="container">
+    <span class="section-label" data-i18n="services.label">Qué hacemos</span>
+    <h2 class="section-heading" data-i18n="services.heading">Servicios</h2>
+    <p class="section-intro" data-i18n="services.intro">
+      Trabajamos con empresas, emprendedores e instituciones educativas
+      que necesitan un producto digital bien hecho, de principio a fin.
+    </p>
+
+    <div class="services-grid">
+      {
+        services.map((service) => (
+          <div class="service-card">
+            <div class="service-icon">{service.icon}</div>
+            <h3 data-i18n={`services.${service.key}.title`}>{service.title}</h3>
+            <p data-i18n={`services.${service.key}.desc`}>{service.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
