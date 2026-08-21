@@ -14,9 +14,9 @@ export const translations = {
 
     "hero.eyebrow": "Estudio pequeño, entrega directa · Lima, Perú",
     "hero.title":
-      "Software para tu negocio, construido por quien realmente lo <em>programa</em>",
+      "Software para tu negocio, hecho por quien realmente lo <em>programa</em>",
     "hero.subtitle":
-      "Landing pages, catálogos y apps a medida — sin intermediarios, sin subcontratar. Hablas directo con el equipo que escribe el código, del primer boceto a la entrega.",
+      "Landing pages, catálogos y apps a medida. Hablas directo con la persona que escribe el código, desde el primer boceto hasta la entrega.",
     "hero.cta.services": "Ver servicios",
     "hero.cta.contact": "Escríbenos",
     "hero.mascot.alt": "Mascota de Gnomecko",
@@ -24,43 +24,43 @@ export const translations = {
     "services.label": "Qué hacemos",
     "services.heading": "Servicios",
     "services.intro":
-      "Trabajamos con empresas, emprendedores e instituciones educativas que necesitan un producto digital bien hecho, de principio a fin.",
+      "Trabajamos con empresas, emprendedores e instituciones educativas que necesitan algo bien hecho de principio a fin.",
     "services.1.title": "Landing pages y sitios web",
     "services.1.desc":
-      "Páginas rápidas, responsivas y pensadas para convertir visitas en clientes, con una identidad visual propia.",
+      "Páginas rápidas y responsivas. La identidad visual es tuya, no una plantilla con tu logo pegado encima.",
     "services.2.title": "Apps personalizadas",
     "services.2.desc":
-      "Aplicaciones web y móviles a medida, adaptadas a los procesos reales de tu negocio, no al revés.",
+      "Aplicaciones web y móviles armadas alrededor de cómo funciona tu negocio de verdad.",
     "services.3.title": "Apps educativas",
     "services.3.desc":
-      "Herramientas digitales para enseñar mejor: seguimiento de progreso, contenidos interactivos y accesibles.",
+      "Seguimiento de progreso, contenido interactivo, herramientas que los alumnos usan de verdad.",
     "services.4.title": "Videojuegos educativos",
     "services.4.desc":
-      "Aprendizaje a través del juego: mecánicas simples, objetivos claros y contenido pedagógico real.",
+      "Mecánicas simples, un objetivo claro y contenido pedagógico real detrás.",
 
     "projects.label": "Lo que hemos construido",
     "projects.heading": "Proyectos",
     "projects.intro":
-      "Recién estamos empezando como empresa, pero no desde cero. Así programamos cuando el proyecto ya está en producción real.",
+      "Recién estamos empezando como empresa. Como programadores, no.",
     "projects.coderbloom.tag": "Antes de fundar Gnomecko",
     "projects.coderbloom.desc":
-      "Sitio web y backend para <strong>CoderBloom</strong>, una comunidad que impulsa a mujeres en programación competitiva: ranking mensual actualizado automáticamente según los resultados de sus concursos, y un sistema de badges personalizadas para reconocer a las participantes.",
+      "Sitio web y backend de <strong>CoderBloom</strong>, una comunidad que impulsa a mujeres en programación competitiva. El ranking mensual se actualiza solo con los resultados de sus concursos, y armamos un sistema de badges para reconocer a las participantes.",
     "projects.coderbloom.link": "Ver el ranking en vivo →",
 
     "about.label": "Quiénes somos",
     "about.heading": "Nosotros",
     "about.p1":
-      "Gnomecko empezó como la obsesión de un programador por construir aplicaciones y videojuegos educativos — el tipo de proyectos que uno hace de madrugada porque le gustan, no porque se lo pidan. Mi cuñado, contador de profesión, me convenció de algo simple: si además ofrecíamos desarrollo para otros negocios, el dinero llegaría más rápido y podíamos financiar esas ideas propias mientras las construíamos con calma.",
+      "Gnomecko nació de la obsesión de un programador por construir apps y videojuegos educativos: el tipo de proyecto que uno arma de madrugada por pasión. Con el tiempo se sumó mi cuñado, contador de profesión, y entre los dos decidimos ofrecer desarrollo también para otros negocios.",
     "about.p2":
-      "Hoy somos dos: un desarrollador y un contador. Sin equipo grande ni capas de gerencia en el medio — la misma persona que diseña tu proyecto es la que lo programa y la que te responde. Recién estamos empezando, así que cada cliente recibe la misma atención que le pondríamos a nuestros propios proyectos.",
+      "Hoy somos dos: un programador y un contador. Nada de equipos grandes ni gerencias en el medio. La misma persona que diseña tu proyecto es la que lo programa y te responde. Estamos empezando, así que cada cliente todavía se lleva toda nuestra atención.",
     "about.stat1": "Trato directo, sin intermediarios",
-    "about.stat2": "Cada proyecto, hecho a tu medida",
-    "about.stat3": "Recién empezando: más atención, no menos",
-    "about.stat4": "Construimos nuestras propias apps y juegos",
+    "about.stat2": "Cada proyecto pensado para lo que tú necesitas",
+    "about.stat3": "Recién empezando: todavía tenemos tiempo de sobra para cada cliente",
+    "about.stat4": "Construimos nuestras propias apps y juegos, así sabemos programar cosas que sí se terminan",
 
     "contact.heading": "¿Tienes un proyecto en mente?",
     "contact.text":
-      "Cuéntanos qué necesitas y te respondemos con una propuesta clara, sin vueltas.",
+      "Cuéntanos qué necesitas. Te respondemos con una propuesta clara, sin vueltas.",
 
     "footer.rights": "Todos los derechos reservados.",
   },
@@ -77,9 +77,9 @@ export const translations = {
 
     "hero.eyebrow": "Small studio, direct delivery · Lima, Peru",
     "hero.title":
-      "Software for your business, built by the people who actually <em>write the code</em>",
+      "Software for your business, made by the person who actually <em>writes the code</em>",
     "hero.subtitle":
-      "Landing pages, catalogs and custom apps — no middlemen, no outsourcing. You talk directly to the team writing the code, from the first sketch to delivery.",
+      "Landing pages, catalogs and custom apps. You talk directly to the person writing the code, from the first sketch to delivery.",
     "hero.cta.services": "See services",
     "hero.cta.contact": "Get in touch",
     "hero.mascot.alt": "Gnomecko mascot",
@@ -87,43 +87,43 @@ export const translations = {
     "services.label": "What we do",
     "services.heading": "Services",
     "services.intro":
-      "We work with businesses, entrepreneurs and educational institutions that need a digital product done right, start to finish.",
+      "We work with businesses, entrepreneurs and educational institutions that need something done right, start to finish.",
     "services.1.title": "Landing pages & websites",
     "services.1.desc":
-      "Fast, responsive pages designed to turn visitors into customers, with a visual identity of their own.",
+      "Fast, responsive pages. The visual identity is yours — not a template with your logo slapped on top.",
     "services.2.title": "Custom apps",
     "services.2.desc":
-      "Web and mobile apps built around how your business actually works, not the other way around.",
+      "Web and mobile apps built around how your business really works.",
     "services.3.title": "Educational apps",
     "services.3.desc":
-      "Digital tools for better teaching: progress tracking, interactive and accessible content.",
+      "Progress tracking, interactive content, tools students actually use.",
     "services.4.title": "Educational video games",
     "services.4.desc":
-      "Learning through play: simple mechanics, clear goals and real educational content.",
+      "Simple mechanics, one clear goal, and real educational content behind it.",
 
     "projects.label": "What we've built",
     "projects.heading": "Projects",
     "projects.intro":
-      "We're just starting out as a company, but not from zero. This is how we build when a project is already live in production.",
+      "We're just starting out as a company. As programmers, we're not.",
     "projects.coderbloom.tag": "Before founding Gnomecko",
     "projects.coderbloom.desc":
-      "Website and backend for <strong>CoderBloom</strong>, a community that supports women in competitive programming: a monthly ranking auto-updated from their contest results, plus a custom badge system to recognize participants.",
+      "Website and backend for <strong>CoderBloom</strong>, a community that supports women in competitive programming. The monthly ranking updates itself from their contest results, and we built a badge system to recognize participants.",
     "projects.coderbloom.link": "See the live ranking →",
 
     "about.label": "Who we are",
     "about.heading": "About us",
     "about.p1":
-      "Gnomecko started as one programmer's obsession with building educational apps and video games — the kind of project you work on at 2 a.m. because you want to, not because someone asked. My brother-in-law, an accountant, talked me into something simple: if we also offered development for other businesses, money would come in faster, and we could fund those personal ideas while building them at our own pace.",
+      "Gnomecko started as one programmer's obsession with building educational apps and video games — the kind of project you put together at 2 a.m. out of pure passion. Over time my brother-in-law, an accountant, joined in, and together we decided to also offer development for other businesses.",
     "about.p2":
-      "Today we're two people: a developer and an accountant. No big team, no layers of management in between — the same person who designs your project is the one who builds it and the one who answers you. We're just getting started, so every client gets the same care we'd put into our own projects.",
+      "Today we're two people: a programmer and an accountant. No big teams, no management layers in between. The same person who designs your project is the one who builds it and answers you. We're just getting started, so every client still gets all of our attention.",
     "about.stat1": "Direct contact, no middlemen",
-    "about.stat2": "Every project, built around you",
-    "about.stat3": "Just starting out: more attention, not less",
-    "about.stat4": "We build our own apps and games too",
+    "about.stat2": "Every project designed around what you actually need",
+    "about.stat3": "Just starting out: we still have plenty of time for every client",
+    "about.stat4": "We build our own apps and games too — so we know how to ship things that actually get finished",
 
     "contact.heading": "Got a project in mind?",
     "contact.text":
-      "Tell us what you need and we'll get back to you with a clear proposal, no runaround.",
+      "Tell us what you need. We'll get back to you with a clear proposal, no runaround.",
 
     "footer.rights": "All rights reserved.",
   },

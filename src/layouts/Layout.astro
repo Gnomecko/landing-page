@@ -21,8 +21,10 @@ const {
     <meta name="description" content={description} />
 
     <!-- Aplica el tema oscuro guardado ANTES de pintar, para que no haya
-         parpadeo (flash claro→oscuro) al cargar. El resto de la lógica de
-         tema/idioma vive en PreferencesToggle.astro. -->
+         parpadeo (flash claro→oscuro) al cargar. Si no hay nada guardado
+         (primera visita), no hace nada y CSS decide por
+         prefers-color-scheme (ver brand.css). El resto de la lógica de
+         tema/idioma vive en ThemeToggle.astro y LangToggle.astro. -->
     <script is:inline>
       (function () {
         try {
