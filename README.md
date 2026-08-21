@@ -66,7 +66,7 @@ multi-idioma de verdad.
 
 Se incluyó solo lo relevante para una landing pública:
 
-- Razón social: **GNOMECKO SAS**
+- Razón social: **GNOMECKO S.A.C.S.**
 - Nombre comercial: **GNOMECKO**
 - RUC: **20615923304**
 - Correo: **developer@gnomecko.com**
