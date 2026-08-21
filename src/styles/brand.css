@@ -61,11 +61,12 @@
 /* ==========================================================================
    MODO OSCURO
    --------------------------------------------------------------------------
-   Se activa de 2 formas (ver el círculo de preferencias en el header):
+   Se activa de 2 formas (ver los botones ☀️/🌙 del header):
    1. El sistema operativo del visitante está en oscuro y no eligió nada
-      manualmente (bloque @media de abajo).
+      manualmente (bloque @media de abajo) — esto es lo que se ve la
+      primera vez que alguien entra, si su sistema está en oscuro.
    2. Eligió "Oscuro" a propósito (atributo data-theme="dark" en <html>,
-      guardado y aplicado por src/components/PreferencesToggle.astro).
+      guardado en localStorage por src/components/ThemeToggle.astro).
    Para ajustar los colores del modo oscuro, edita los valores de AMBOS
    bloques (son iguales a propósito). --color-primary y --color-accent no
    se repiten porque se mantienen igual en los dos temas. */
